@@ -1,0 +1,33 @@
+#imagem-Jenny {
+
+    width: 200px;
+    height: 200px; 
+    overflow: hidden;
+	padding: 0;
+    
+    border-radius: 50%;
+    }
+
+	#imagem-Jenny img {
+		width: 100%;
+	}
+
+   #imagem-nav {
+        width: 200px;
+        border-radius: 50px;
+        border: 1px solid;
+        border-color: #8b0000;
+        margin: 20px;
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    #imagem-nav img {
+		width: 100%;
+	}
+
+    #imagem-nav img:hover {
+        background-color: #8b0000;
+        
+    border-radius: 50%;
+    }

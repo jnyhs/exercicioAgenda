@@ -1,0 +1,266 @@
+/*Arquivo css padrão */
+* {box-sizing: border-box;
+	font-family: serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+	margin: 0;
+	padding: 0;
+	font-family: serif;
+	font-size: 62.5%; /* Corresponde a 10px */
+}
+
+
+body {
+	background-image: url(../imagens/pontos.gif);
+	height: 100vh;
+    overflow: overlay;
+}
+
+h1, h2, h3, h4 {
+	font: italic bold 1.2rem/2 sans-serif;
+    margin: 10px 0px 5px 0px;
+}
+
+h1{
+	color: darkred;
+}
+
+p {
+	font-family: monospace;
+    margin-bottom: 20px;
+}
+a {
+	color: #8b0000;
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+	display: block;
+	height: auto;
+}
+
+a:visited {
+	color: #000;
+}
+
+a:active {
+	color: #8b0000;
+}
+
+a:hover {
+	color: #000;
+	background: #eee;
+	text-decoration: underline;
+}
+
+h2:hover {
+	color: #888;
+}
+
+
+ul {
+	background-color: rgba(220, 220, 220, 0.9);;
+	font-size: 20px;
+}	
+
+ul li{
+	font-size: 0.8em;
+	padding: 1px;
+}
+
+
+
+iframe {
+	margin-top: 40px;
+	width: 50%;
+	float: right;
+}
+
+label{
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+	margin: 5px;
+	font-weight: bold;
+	color: #8b0000;
+}
+
+label:hover {
+
+	color: #000
+}
+
+input, textarea, select {
+	margin: 14px 5px 5px 5px;
+}
+
+#submit {
+	text-align: center;
+	border: none;
+}
+
+ p { 
+	font-size: 1.6rem;
+	 }
+
+article h1 {
+	font-size: 3rem;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+article h1:hover {
+	color:#8b0000;
+}
+
+form div { background-color: rgba(255, 255, 255, 0.5);
+	margin: 1.5rem  1rem;
+	padding: 1rem;
+	border: 1px solid #8b0000;
+}
+
+[type="text"], [type="email"], label, textarea {
+	display: block;
+	width: 100%;
+}
+
+h2 {
+	font-size: 4rem;
+}
+h1 {
+	font-size: 2rem;
+}
+h4{
+	font-size: 1.6px;
+}
+
+/* Style the header */
+header {
+	background-color: #8b0000;
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+	color: lightgray;
+	}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+float: left;
+width: 30%;
+display: table;
+
+background: rgba(220, 220, 220, 0.9);
+padding: 20px 10px ;
+}
+
+/* Style the list inside the menu */
+nav ul {
+list-style-type: none;
+padding: 0;
+background: rgba(220, 220, 220, 0.9);
+}
+
+article {
+background-color: rgba(255, 255, 255, 0.5);
+float: left;
+padding: 20px;
+width: 50%;
+}
+
+article ul {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+article ul:hover {
+	color: #000;
+	background: #eee;
+	text-decoration: underline;
+}
+
+ 
+
+/* Clear floats after the columns */
+section::after {
+background: #ffebee;
+content: "";
+display: table;
+clear: both;
+}
+
+/* Style the footer */
+footer {
+background-color: #8b0000;
+padding: 10px;
+text-align: center;
+color: white;
+}
+
+form div{
+	position: static;
+	position: relative;
+	top: 0px;
+}
+
+label { 
+position: absolute;
+top: -2px;
+padding:2px }
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 20px;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+	color: #8b0000;
+}
+
+th {
+	background-color: #ddd;
+}
+
+tr{
+	border: 1px solid #8b0000;
+}
+thead {
+	font-size: large;
+	border: 3px solid #8b0000;
+}
+
+h4{
+	font-size: large;
+	color: #8b0000;
+}
+
+button {
+ margin-bottom: 100px;
+}
+
+/* Mobile First */
+
+@media (max-width: 768px){
+		nav {
+		width: 10vw;
+	} 
+	article {
+		width: 50vw;		
+	}
+	iframe {
+		width: 50vw;
+	}
+	.coluna{
+	width: 100%;
+	min-width: unset;
+	}
+}
+
+@media (max-width: 425px){
+	nav, article, .coluna{
+	width: 100%;
+	min-width: 320px;
+	overflow: overlay;
+	}
+}

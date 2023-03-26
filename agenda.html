@@ -1,0 +1,57 @@
+<! DOCTYPE html>
+<html lang="pt_BR">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<head>
+  <title>Agenda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/imagem.css">
+  <script type="text/javascript" src="hello.js"></script>
+
+</head>
+
+<header>
+  <h2> Agenda de Contatos </h2>
+
+</header>
+
+<section>
+  <nav>
+
+    <div id="imagem-nav">
+      <img src="./imagens/Jenny2.png" alt="Jenny">
+    </div>
+  </nav>
+  <article>
+    <h1> Insira os dados requisitados:</h1>
+
+    <h1>Agenda</h1>
+
+    <form id="myForm" method="get">
+      <div>
+        <label for="nome">Nome </label>
+        <input type="text" name="nome" id="nome" placeholder="Digite o nome" />
+      </div>
+      <div>
+        <label for="tel">Telefone:</label>
+        <input type="tel" name="tel" id="tel" placeholder="Digite o número de telefone" />
+      </div>
+      <button type="button" onclick="adicionarContato()">Salvar</button>
+    </form>
+    <table id="tabela">
+      <thead>
+      <tr>
+        <h4> Sua lista de contatos </h4>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th>Nome:</th>
+        <th> Telefone:</th>
+      </tr>
+      </tbody>
+    </table>
+
+    </body>
+</html>
